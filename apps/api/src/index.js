@@ -1,4 +1,5 @@
 require("dotenv").config();
+console.log("JWT_SECRET:", process.env.JWT_SECRET);
 
 const createApp = require("./app");
 const connectDB = require("./db");
