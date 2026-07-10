@@ -1,0 +1,24 @@
+{
+  "name": "swiftpay",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "npm@10.9.7",
+  "description": "SwiftPay — a digital wallet (PayTM clone) built with Express, MongoDB, and Next.js",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "dev:api": "npm run dev --workspace=api",
+    "dev:web": "npm run dev --workspace=web"
+  },
+  "devDependencies": {
+    "turbo": "^2.1.2"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  }
+}

@@ -1,0 +1,10 @@
+[build]
+builder = "RAILPACK"
+buildCommand = "npm ci --workspace=api --include-workspace-root=false"
+watchPatterns = ["apps/api/**", "package.json", "package-lock.json"]
+
+[deploy]
+startCommand = "npm start --workspace=api"
+healthcheckPath = "/api/v1/health"
+healthcheckTimeout = 100
+restartPolicyType = "ON_FAILURE"
